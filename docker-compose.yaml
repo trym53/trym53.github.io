@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  chartjs: 
+    image: chartjs
+    container_name: chart-js
+    volumes: 
+      - ./:/chart.js
+    ports: 
+      - 8080:8080
+    tty: true

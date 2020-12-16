@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<title>なにかの Chart</title>
+	<script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<!--script src="../../utils.js"></script-->
+	<style>
+		/*canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		},*/
+		body { 
+			background-color: #061a2b;
+			padding: 16px;
+		},
+
+		canvas {
+		border: 1px dotted white;
+		},
+
+		.chart-container-1 {
+		height: 150px;
+		flex: 10 10 auto;
+		width: 45%;
+		},
+
+		.chart-container-2 {
+		height: 150px;
+		flex: 10 10 auto;
+		width: 45%;
+		},
+
+		.main-container {
+		display: flex;
+		justify-content: space-between;
+		},
+
+		.main-container > div {
+			padding: 0px 10px;
+		},
+	</style>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="chart-container-1">
+      		<canvas id="phoneChart"></canvas>
+ 		</div>
+		<div class="chart-container-2">
+      		<canvas id="gyudonChart"></canvas>
+ 		</div>
+	</div>
+
+	<script src="./js/phone.js"></script>
+	<script src="./js/gyudon.js"></script>
+</body>
+
+</html>
